@@ -1,27 +1,82 @@
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__list {
     display: flex;
     margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
+    margin-right: auto;
+    margin-left: 170px;
     padding: 0;
 
     list-style: none;
   }
 
   &__item {
-    margin-right: 20px;
-  }
+    margin-right: 24px;
 
-  &__link {
-    color: $color-default-white;
-
-    &.is-active {
-      opacity: 0.6;
+    &:last-child {
+      margin-right: 0;
     }
   }
 
-  &__toggle {
-    display: none;
+  &__link {
+    color: $color-grey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    transition: $trans-default;
+
+    &.active {
+      color: $color-silver;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $color-default-white;
+    }
+  }
+
+  &__other {
+    display: flex;
+    margin: 0;
+    margin-right: 24px;
+    margin-left: 100px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__other-item {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__other-link {
+    transition: $trans-default;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__cart {
+    margin-top: -13px;
+
+    a {
+      transition: $trans-default;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
   }
 }

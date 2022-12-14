@@ -1,13 +1,46 @@
 .header {
-  padding: 28px 0;
-
-  background-color: $color-neon-blue;
+  padding: 30px 0;
+  background-color: $color-black;
 
   .container {
     display: flex;
   }
 
-  &__logo {
-    color: $color-default-white;
+  &__lang {
+    position: relative;
+    margin-left: 40px;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      top: 0;
+      left: 25px;
+      color: $color-grey;
+    }
+  }
+
+  &__lang-link {
+    color: $color-grey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    padding-right: 20px;
+    transition: $trans-default;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    &.active {
+      color: $color-gainsboro;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
