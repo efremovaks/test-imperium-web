@@ -1,0 +1,92 @@
+.sale {
+    background-color: $color-black;
+    min-height: 930px;
+    overflow: hidden;
+    margin-top: -2px;
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 32px;
+    }
+
+    &__title {
+        width: 735px;
+        height: 400px;
+        margin-left: -80px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $color-silver;
+        margin: 29px 0;
+        max-width: 490px;
+    }
+
+    &__subs-input {
+        background-color: $color-black;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $color-grey;
+        width: 445px;
+        height: 32px;
+        color: $color-white-smoke;
+        padding-bottom: 15px;
+    }
+
+    &__subs-btn {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $color-night-rider;
+        background-color: $color-default-white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: 56px;
+
+        transition: $trans-default;
+
+        &:hover {
+            color: $color-default-white;
+            background-color: $color-night-rider;
+        }
+
+        &:active {
+            color: $color-night-rider;
+            background-color: $color-default-white;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 64px;
+        right: -114px;
+        border: 1px solid $color-night-rider;
+        border-radius: 50%;
+        width: 736px;
+        height: 736px;
+        padding: 40px;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

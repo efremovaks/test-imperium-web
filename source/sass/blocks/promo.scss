@@ -1,8 +1,9 @@
 .promo {
-    min-height: 850px;
+    min-height: 808px;
     position: relative;
 
     &__header {
+        color: $color-night-rider;
         margin: 0;
     }
 
@@ -12,6 +13,10 @@
 
     &__slider {
         margin-top: 40px;
+    }
+
+    &__slide-info {
+        margin-top: 20px;
     }
 
     &__slide-text {
@@ -128,6 +133,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 20;
     }
 
     &__fix-ban {

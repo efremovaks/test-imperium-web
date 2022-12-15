@@ -1,0 +1,40 @@
+mixin about()
+
+  -
+    const aboutItems = [
+      {
+        header: "Космические технологии",
+        text: "Первый завод в россии по производству полного ассортимента высококачественных хоккейных клюшек для всех возрастных категорий и уровней игры",
+        img: "about1",
+        path: "content",
+        format: "png",
+        width: 594,
+        height: 344,
+        alt: "технологии",
+      },
+      {
+        header: "Российский стиль",
+        text: "Клюшки заряд специально спроектированы для точной игры в пас, первого длинного паса, максимального контроля шайбы и остроатакующей комбинационной игры",
+        img: "about2",
+        path: "content",
+        format: "png",
+        width: 594,
+        height: 344,
+        alt: "стиль",
+      }
+    ]
+
+  .about
+    .about__wrapper
+      .container
+        .about__left
+          h2.about__header.headers__h2 О бренде ЗаряД
+          p.about__text Первый завод в россии по производству полного ассортимента высококачественных хоккейных клюшек для всех возрастных категорий и уровней игры
+          a.about__btn(href="#") Подробнее о&nbsp;компании
+        .about__right
+          ul.about__list
+            each item in aboutItems
+              li.about__item
+                p.about__item-header= item.header
+                p.about__item-text= item.text
+                +img(item.path, item.img, item.format, item.width, item.height, item.alt)

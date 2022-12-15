@@ -17,9 +17,9 @@ const initIntroSlider = () => {
       centeredSlides: true,
       loopFillGroupWithBlank: true,
 
-      speed: 300,
+      speed: 400,
       autoplay: {
-        delay: 4000,
+        delay: 4500,
         disableOnInteraction: false,
       },
 

@@ -1,0 +1,16 @@
+mixin sale()
+
+  .sale
+    .sale__wrapper
+      .container
+        h2.visually-hidden Скидка
+        .sale__title
+          +icon("sale", 662, 305)
+        p.sale__text Никакого спама и рекламы, только полезная информация, скидки и персональные предложения
+        .sale__subs
+          form(action="#" method="get")
+            label(for="email")
+            input(type="email" id="email" size="30" placeholder="Ваш Email" required).sale__subs-input
+            button(type="submit").sale__subs-btn Подписаться
+      .sale__img
+        +img("content", "sale", "png", 655, 655, "sale 500")

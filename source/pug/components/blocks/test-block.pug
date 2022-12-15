@@ -1,0 +1,15 @@
+mixin test-block()
+
+  .test-block
+    .container
+      .test-block__wrapper
+        h2.test-block__header.headers__h2 Подберем Вашу идеальную клюшку
+        p.test-block__text Пройдите тест и узнайте какая клюшкам подойдет именно вам
+        .test-block__bg
+          +img("content", "test", "png", 1444, 707, "bg")
+        .test-block__title
+          +img("content", "intro-title", "png", 1096, 117, "bg")
+        .test-block__main
+          .test-block__img
+            +img("content", "test-block", "png", 1048, 741, "men")
+          a.test-block__button(href="#") Пройти тест
