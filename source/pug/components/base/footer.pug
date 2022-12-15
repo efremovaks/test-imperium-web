@@ -1,3 +1,123 @@
 mixin footer(footerMods)
+
+  -
+    const footerItems = [
+      {
+        header: "О бренде",
+        items: [
+          {
+            item: "История бренда",
+          },
+          {
+            item: "Технологии производства",
+          },
+          {
+            item: "Производство",
+          },
+          {
+            item: "Контакты магазинов",
+          },
+        ],
+      },
+      {
+        header: "Партнерам",
+        items: [
+          {
+            item: "Как стать партнером",
+          },
+          {
+            item: "Как мы работаем",
+          },
+          {
+            item: "Информация о выборе контрагентов",
+          },
+        ],
+      },
+      {
+        header: "Покупателям",
+        items: [
+          {
+            item: "Доставка и оплата",
+          },
+          {
+            item: "Обмен и возврат",
+          },
+          {
+            item: "Гарантия",
+          },
+        ],
+      },
+      {
+        header: "",
+        items: [
+          {
+            item: "Бонусная программа",
+          },
+          {
+            item: "Таблица размеров",
+          },
+          {
+            item: "Подарочный сертификат",
+          },
+        ],
+      },
+
+    ]
+
+
   footer.footer(class=footerMods)
     .container
+      .footer__top
+        .footer__logo
+          +icon("big-logo", 261, 27)
+        ul.footer__social
+          li.footer__social-item
+            a.footer__social-link(href="#")
+              +icon("icon-tg", 40, 40)
+          li.footer__social-item
+            a.footer__social-link(href="#")
+              +icon("icon-vk", 40, 40)
+
+      .footer__wrapper
+        .footer__left
+          .footer__left-wrap
+            .footer__data-wrap
+              .footer__data
+                p.footer__data-header Наименование
+                p.footer__data-text ООО «ЗаряД»
+              .footer__data
+                p.footer__data-header Юридический адрес
+                p.footer__data-text Республика Татарстан, г. Набережные Челны, ул. Альметьевский тракт, д. 6а
+            .footer__data-wrap.footer__data-wrap--cont
+              .footer__data
+                p.footer__data-header Телефон
+                a.footer__data-text(href="tel:+78005119390") +7 (800) 511-93-90
+              .footer__data
+                p.footer__data-header Email
+                a.footer__data-text(href="mailto:info@zaryad-hockey.ru") info@zaryad-hockey.ru
+              .footer__data
+                p.footer__data-header ИНН
+                p.footer__data-text 1646040440
+              .footer__data
+                p.footer__data-header ОГРН
+                p.footer__data-text 1151674001632
+            .footer__copyright
+              p.footer__copyright-item © 2017-2022 Заряд
+              a.footer__copyright-item(href="#") Политика конфиденциальности
+
+        .footer__right
+          each item in footerItems
+            .footer__block
+              p.footer__block-header= item.header
+              ul.footer__block-links
+                each i in item.items
+                  li.footer__block-link
+                    a(href="#")= i.item
+        .footer__contact-us
+          a(href="#") Связаться с нами
+        .footer__studio
+          a(href="#")
+            +icon("icon-stud", 132, 32)
+
+
+

@@ -136,6 +136,10 @@
             margin-top: 64px;
             margin-left: 38px;
         }
+
+        &:hover {
+            border: 1px solid $color-night-rider;
+        }
     }
 
     &__slide-about {
@@ -170,6 +174,12 @@
         right: 120px;
         border: 1px solid $color-white-smoke;
         border-radius: 50%;
+
+        &:hover {
+            .intro__slide-about-link-text {
+                animation-play-state: paused;
+            }
+        }
     }
 
     &__slide-about-link-text {

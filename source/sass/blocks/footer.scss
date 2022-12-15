@@ -1,5 +1,178 @@
 .footer {
-  padding: 40px 0;
+  padding: 100px 0;
+  background-color: $color-white-smoke;
 
-  background-color: $color-neon-blue;
+  &__top {
+    display: flex;
+    margin-bottom: 42px;
+  }
+
+  &__logo {
+    width: 261px;
+    height: 27px;
+    margin-right: 50px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  &__social-item {
+    margin-right: 16px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__social-link {
+    transition: $trans-default;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__left {
+    margin-right: 160px;
+  }
+
+  &__data-wrap--cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  &__data {
+    margin-bottom: 16px;
+    max-width: 355px;
+  }
+
+  &__data-header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-silver;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &__data-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-night-rider;
+    margin: 0;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-grey;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 5px;
+  }
+
+  &__block {
+    &:last-of-type {
+      margin-top: 24px;
+    }
+  }
+
+  &__block-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-night-rider;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__block-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__block-link {
+    margin-bottom: 16px;
+
+    a {
+      transition: $trans-default;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__contact-us {
+    position: absolute;
+    top: -89px;
+    right: -16px;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: $color-international-orange;
+      width: 150px;
+      height: 150px;
+      border: 1px solid $color-international-orange;
+      border-radius: 50%;
+      padding: 29px;
+      transition: $trans-default;
+
+      &:hover {
+        border: 2px solid $color-international-orange;
+      }
+    }
+  }
+
+  &__studio {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+    width: 132px;
+    height: 32px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

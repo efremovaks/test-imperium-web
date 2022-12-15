@@ -129,16 +129,16 @@
 
     &__banners {
         position: absolute;
-        bottom: 0;
+        bottom: -13px;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 240px;
         z-index: 20;
     }
 
     &__fix-ban {
         position: absolute;
-        bottom: -300px;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -171,7 +171,7 @@
 
     &__anim-ban {
         position: absolute;
-        bottom: -315px;
+        bottom: -13px;
         left: 0;
         width: 100%;
         height: 100%;
