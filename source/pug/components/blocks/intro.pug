@@ -50,6 +50,16 @@ mixin intro()
             each item in dataSlides
               .intro__slide.swiper-slide
                 +img(item.path, item.img, item.format, item.width, item.height, item.alt)
+                .intro__slide-about
+                  p.intro__slide-about-name Константин Константинович
+                  p.intro__slide-about-description Крутой хоккеист такой&nbsp;-&nbsp;то&nbsp;команды
+                  a.intro__slide-about-link(href="#")
+                    .intro__slide-about-link-text
+                      +icon("icon-text", 115, 115)
+                    .intro__slide-about-link-play
+                      +icon("icon-play", 27, 27)
+                a.intro__slide-link(href="#") #[span В каталог]
+
       .intro__slider-buttons
         .intro__slider-button.intro__slider-button--left.swiper-button-prev
           +icon("slider-btn", 78, 58)

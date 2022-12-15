@@ -1,0 +1,124 @@
+mixin promo()
+
+  -
+    const promoSlides = [
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+      {
+        img: "promo-slide1",
+        path: "slides",
+        format: "png",
+        width: 282,
+        height: 271,
+        alt: "t100",
+        text: "Хоккейная клюшка Заряд Т100",
+        price: "14 690 ₽",
+      },
+    ]
+
+  .promo
+    .container
+      .promo__wrapper
+        h2.promo__header.headers__h2 Выбор наших клиентов
+        .promo__slider
+          .promo__container.swiper
+            .promo__slides.swiper-wrapper
+              each item in promoSlides
+                .promo__slide.swiper-slide
+                  +img(item.path, item.img, item.format, item.width, item.height, item.alt)
+                  .promo__slide-info
+                    p.promo__slide-text= item.text
+                    p.promo__slide-price= item.price
+                  .promo__slide-links
+                    a.promo__slide-chart(href="#")
+                      +icon("icon-chart", 26, 26)
+                    a.promo_slide-more(href="#") Подробнее
+                      +icon("icon-more", 16, 16)
+
+
+          .promo__slider-buttons
+            .promo__slider-button.promo__slider-button--left.swiper-button-prev
+              +icon("slider-btn", 78, 58)
+            .promo__slider-button.promo__slider-button--right.swiper-button-next
+              +icon("slider-btn", 78, 58)
+    .promo__banners
+      .promo__fix-ban
+        +icon("icon-promo-items", 1974, 60)
+        //- .promo__fix-ban-items
+        //-   p.promo__fix-ban-item Клюшки
+        //-   p.promo__fix-ban-item Одежда
+        //-   p.promo__fix-ban-item Аксессуары
+        //- .promo__fix-ban-items
+        //-   p.promo__fix-ban-item Клюшки
+        //-   p.promo__fix-ban-item Одежда
+        //-   p.promo__fix-ban-item Аксессуары
+      .promo__anim-ban
+        +icon("icon-promo-active", 1974, 60)

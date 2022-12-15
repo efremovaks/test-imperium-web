@@ -17,11 +17,11 @@ const initIntroSlider = () => {
       centeredSlides: true,
       loopFillGroupWithBlank: true,
 
-      // speed: 250,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+      speed: 300,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
 
       navigation: {
         nextEl: '.intro__slider-button--right',

@@ -612,13 +612,3 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
   overflow: hidden;
 }
-
-.swiper-slide {
-  transition: 0.6s ease;
-}
-
-.swiper-slide-next,
-.swiper-slide-prev {
-  transform: scale(0.9) translateY(25px);
-  transition: 0.6s ease;
-}

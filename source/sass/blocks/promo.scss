@@ -1,0 +1,178 @@
+.promo {
+    min-height: 850px;
+    position: relative;
+
+    &__header {
+        margin: 0;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__slider {
+        margin-top: 40px;
+    }
+
+    &__slide-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $color-night-rider;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    &__slide-price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-night-rider;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    &__slide-links {
+        display: flex;
+    }
+
+    &__slide-chart {
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 50px;
+        border: 1px solid $color-silver;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin-right: 10px;
+
+        transition: $trans-default;
+
+        svg {
+            position: absolute;
+            top: 9px;
+            left: 21px;
+        }
+
+        &:hover {
+            border-color: $color-grey;
+        }
+    }
+
+    &_slide-more {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-night-rider;
+        width: 207px;
+        height: 50px;
+        padding: 15px 24px;
+
+        border: 1px solid $color-silver;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        transition: $trans-default;
+
+        &:hover {
+            border-color: $color-grey;
+        }
+    }
+
+    &__slider-buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 160px;
+    }
+
+    &__slider-button {
+        width: 78px;
+        height: 58px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            border: 1px solid $color-grey;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+    }
+
+    &__slider-button--left {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__slider-button--right {
+        position: absolute;
+        top: 0;
+        right: -5px;
+    }
+
+    &__banners {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__fix-ban {
+        position: absolute;
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        // display: flex;
+        // justify-content: space-around;
+
+        // animation: scroll 20s linear infinite;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // &__fix-ban-items {
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+
+    // &__fix-ban-item {
+    //     font-weight: 500;
+    //     font-size: 18px;
+    //     line-height: 22px;
+    //     text-transform: uppercase;
+    //     color: $color-night-rider;
+    //     margin: 0;
+    //     margin-right: 50px;
+    // }
+
+    &__anim-ban {
+        position: absolute;
+        bottom: -315px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
